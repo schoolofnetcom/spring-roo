@@ -1,0 +1,39 @@
+// Spring Roo 2.0.0.M3 [rev 20a0f71] log opened at 2017-02-23 08:36:26
+project setup --topLevelPackage com.schoolofnet
+help
+hint
+quit
+// Spring Roo 2.0.0.M3 [rev 20a0f71] log closed at 2017-02-23 08:58:04
+// Spring Roo 2.0.0.M3 [rev 20a0f71] log opened at 2017-02-23 09:36:23
+jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY 
+quit
+// Spring Roo 2.0.0.M3 [rev 20a0f71] log closed at 2017-02-23 09:52:31
+// Spring Roo 2.0.0.M3 [rev 20a0f71] log opened at 2017-02-23 09:52:34
+entity jpa --class ~.domain.Client
+field boolean --fieldName name --notNull
+// [failed] field string --fieldName name --notNull
+field string --fieldName name --notNull --force
+field string --fieldName email
+field string --fieldName companyName --notNull
+repository jpa --all
+service --all
+web mvc setup
+web mvc view setup --type THYMELEAF
+web mvc controller --all --responseType THYMELEAF
+quit
+// Spring Roo 2.0.0.M3 [rev 20a0f71] log closed at 2017-02-23 10:15:59
+// Spring Roo 2.0.0.M3 [rev 20a0f71] log opened at 2017-02-23 10:33:41
+web mvc controller --all --pathPrefix /api
+quit
+// Spring Roo 2.0.0.M3 [rev 20a0f71] log closed at 2017-02-23 10:35:50
+// Spring Roo 2.0.0.M3 [rev 20a0f71] log opened at 2017-02-23 10:56:18
+security setup --provider SPRINGLETS_JPA
+quit
+// Spring Roo 2.0.0.M3 [rev 20a0f71] log closed at 2017-02-23 10:57:19
+// Spring Roo 2.0.0.M3 [rev 20a0f71] log opened at 2017-02-23 11:00:09
+quit
+// Spring Roo 2.0.0.M3 [rev 20a0f71] log closed at 2017-02-23 11:00:38
+// Spring Roo 2.0.0.M3 [rev 20a0f71] log opened at 2017-02-23 11:20:05
+help
+quit
+// Spring Roo 2.0.0.M3 [rev 20a0f71] log closed at 2017-02-23 11:24:13
